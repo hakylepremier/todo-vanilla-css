@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>todo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="head">
+      <h1>todo</h1>
+      <div class="logo">
+        <div class="logo-vert"></div>
+        <div class="logo-hor"></div>
+      </div>
+    </header>
+    <aside class="categories">
+      <div class="category">
+        <div class="cat-colour"></div>
+        <span class="cat-text">work</span>
+      </div>
+      <div class="category">
+        <div class="cat-colour"></div>
+        <span class="cat-text">study</span>
+      </div>
+      <div class="category">
+        <div class="cat-colour"></div>
+        <span class="cat-text">entertainment</span>
+      </div>
+      <div class="category">
+        <div class="cat-colour"></div>
+        <span class="cat-text">family</span>
+      </div>
+    </aside>
+    <main class="todo-items">
+      <article class="todo-item">
+        <header class="todo-head">
+          <h2 class="todo-title">My first title</h2>
+          <img src="asset/icons/more-icon.svg" alt="" class="todo-more-btn">
+          <div class="todo-more-menu">
+            <a href="" class="todo-menu-edit">Edit...</a>
+            <a href="" class="todo-menu-delete">Delete</a>
+          </div>
+        </header>
+        <p class="todo-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, consequatur. Iusto eveniet quia fugiat accusamus facilis aperiam ducimus, labore cum beatae totam quos soluta, sed quas eius voluptate exercitationem a!
+        </p>
+        <p class="checkbox">done</p>
+      </article>
+
+      <article class="todo-item">
+        <header class="todo-head">
+          <h2 class="todo-title">My second title</h2>
+          <img src="asset/icons/more-icon.svg" alt="" class="todo-more-btn">
+          <div class="todo-more-menu">
+            <a href="" class="todo-menu-edit">Edit...</a>
+            <a href="" class="todo-menu-delete">Delete</a>
+          </div>
+        </header>
+        <p class="todo-text">
+          Error alias dolore sequi nemo, voluptatum quas ipsum sapiente, voluptatibus labore magnam rerum placeat fuga dolorum velit cumque amet illo? Blanditiis inventore labore ab necessitatibus quis deserunt odio debitis nisi.
+        </p>
+        <p class="checkbox">done</p>
+      </article>
+    </main>
+
+   <section class="todo-form-container">
+    <form action="POST" class="todo-form">
+      <header class="action-btns">
+        <a href="" class="cancel-btn">Cancel</a>
+        <input type="submit" class="todo-submit-btn" value="Add">
+      </header>
+
+      <div>
+        <label for="todo-form-title" class="todo-label">Title</label>
+        <input type="text" class="todo-input todo-input-title" name="todo-form-title" id="todo-form-title">
+      </div>
+
+      <div>
+        <label for="todo-form-desc" class="todo-label">Description</label>
+        <input type="text" class="todo-input todo-input-descr" name="todo-form-desc" id="todo-form-desc">
+      </div>
+
+      <div>
+        <p class="todo-label">Categories</p>
+        <div class="todo-form-categories">
+          <div class="todo-form-category">
+            <label for="work" class="todo-label">Work</label>
+            <input type="radio" name="descr" value="work" id="work">
+          </div>
+          <div class="todo-form-category">
+            <label for="study" class="todo-label">Study</label>
+            <input type="radio" name="descr" value="study" id="study">
+          </div>
+          <div class="todo-form-category">
+            <label for="entertainment" class="todo-label">Entertainment</label>
+            <input type="radio" name="descr" value="entertainment" id="entertainment">
+          </div>
+          <div class="todo-form-category">
+            <label for="family" class="todo-label">Family</label>
+            <input type="radio" name="descr" value="family" id="family">
+          </div>
+        </div>
+      </div>
+    </form>
+   </section> 
+
+   <footer>
+     Copyright <script>new Date().getFullYear()</script>
+   </footer>
+  </body>
+</html>

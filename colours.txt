@@ -1,0 +1,17 @@
+Option 1:
+pri: #2c3333
+sec: #395b64
+ter: #a5c9ca
+light: #e7f6f2
+
+Option 2:
+pri: #393646
+sec: #474557
+ter: #6d5d6e
+light: #f4eee0
+
+Option 3:
+pri: #2c3639
+sec: #3f4e4f
+ter: #a27b5c
+light: #dcd7c9
