@@ -18,65 +18,67 @@
         <div class="todo-add-hor todo-add-base"></div>
       </div>
     </header>
-    <aside class="categories">
-      <div class="category">
-        <div class="cat-colour"></div>
-        <span class="cat-text">work</span>
-      </div>
-      <div class="category">
-        <div class="cat-colour"></div>
-        <span class="cat-text">study</span>
-      </div>
-      <div class="category">
-        <div class="cat-colour"></div>
-        <span class="cat-text">entertainment</span>
-      </div>
-      <div class="category">
-        <div class="cat-colour"></div>
-        <span class="cat-text">family</span>
-      </div>
-    </aside>
-    <main class="todo-items">
-      <article class="todo-item">
-        <header class="todo-head">
-          <h2 class="todo-title">My first title</h2>
-          <div class="todo-dialog-container">
-            <img src="asset/icons/more-icon.svg" alt="" class="todo-more-btn">
-            <div class="todo-more-menu">
-              <a href="" class="todo-menu-edit">Edit...</a>
-              <a href="" class="todo-menu-delete">Delete</a>
-            </div>
-          </div>
-          
-        </header>
-        <p class="todo-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, consequatur. Iusto eveniet quia fugiat accusamus facilis aperiam ducimus, labore cum beatae totam quos soluta, sed quas eius voluptate exercitationem a!
-        </p>
-        <div class="todo-done-container">
-          <p class="todo-done-text">Done</p>
-          <div class="todo-done-checkbox"></div>
+    <main class="main-info">
+      <aside class="categories">
+        <div class="category">
+          <div class="cat-colour"></div>
+          <span class="cat-text">work</span>
         </div>
-      </article>
+        <div class="category">
+          <div class="cat-colour"></div>
+          <span class="cat-text">study</span>
+        </div>
+        <div class="category">
+          <div class="cat-colour"></div>
+          <span class="cat-text">entertainment</span>
+        </div>
+        <div class="category">
+          <div class="cat-colour"></div>
+          <span class="cat-text">family</span>
+        </div>
+      </aside>
+      <section class="todo-items">
+        <article class="todo-item">
+          <header class="todo-head">
+            <h2 class="todo-title">My first title</h2>
+            <div class="todo-dialog-container">
+              <img src="asset/icons/more-icon.svg" alt="" class="todo-more-btn">
+              <div class="todo-more-menu">
+                <a href="" class="todo-menu-edit">Edit...</a>
+                <a href="" class="todo-menu-delete">Delete</a>
+              </div>
+            </div>
+            
+          </header>
+          <p class="todo-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, consequatur. Iusto eveniet quia fugiat accusamus facilis aperiam ducimus, labore cum beatae totam quos soluta, sed quas eius voluptate exercitationem a!
+          </p>
+          <div class="todo-done-container">
+            <p class="todo-done-text">Done</p>
+            <div class="todo-done-checkbox"></div>
+          </div>
+        </article>
 
-      <article class="todo-item">
-        <header class="todo-head">
-          <h2 class="todo-title">My second title</h2>
-          <div class="todo-dialog-container">
-            <img src="asset/icons/more-icon.svg" alt="" class="todo-more-btn">
-            <div class="todo-more-menu">
-              <a href="" class="todo-menu-edit">Edit...</a>
-              <a href="" class="todo-menu-delete">Delete</a>
+        <article class="todo-item">
+          <header class="todo-head">
+            <h2 class="todo-title">My second title</h2>
+            <div class="todo-dialog-container">
+              <img src="asset/icons/more-icon.svg" alt="" class="todo-more-btn">
+              <div class="todo-more-menu">
+                <a href="" class="todo-menu-edit">Edit...</a>
+                <a href="" class="todo-menu-delete">Delete</a>
+              </div>
             </div>
+          </header>
+          <p class="todo-text">
+            Error alias dolore sequi nemo, voluptatum quas ipsum sapiente, voluptatibus labore magnam rerum placeat fuga dolorum velit cumque amet illo? Blanditiis inventore labore ab necessitatibus quis deserunt odio debitis nisi.
+          </p>
+          <div class="todo-done-container">
+            <p class="todo-done-text">Done</p>
+            <div class="todo-done-checkbox"></div>
           </div>
-        </header>
-        <p class="todo-text">
-          Error alias dolore sequi nemo, voluptatum quas ipsum sapiente, voluptatibus labore magnam rerum placeat fuga dolorum velit cumque amet illo? Blanditiis inventore labore ab necessitatibus quis deserunt odio debitis nisi.
-        </p>
-        <div class="todo-done-container">
-          <p class="todo-done-text">Done</p>
-          <div class="todo-done-checkbox"></div>
-        </div>
-      </article>
+        </article>
+      </section>
     </main>
 
    <section class="todo-form-container">
@@ -93,7 +95,8 @@
 
       <div class="todo-input-container">
         <label for="todo-form-desc" class="todo-label">Description</label>
-        <input type="text" class="todo-input todo-input-descr" name="todo-form-desc" id="todo-form-desc" placeholder="Add a description">
+        <textarea rows="4" class="todo-input todo-input-descr" name="todo-form-desc" id="todo-form-desc" placeholder="Add a description"></textarea>
+        <!-- <input type="text" class="todo-input todo-input-descr" name="todo-form-desc" id="todo-form-desc" placeholder="Add a description"> -->
       </div>
 
       <div>
