@@ -41,6 +41,7 @@ a{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .todo-logo{
@@ -115,6 +116,7 @@ a{
 .todo-title{
   padding: 0;
   margin: 0;
+  /* transition: line-through 4s; */
 }
 
 .todo-dialog-container{
@@ -128,31 +130,90 @@ a{
 }
 
 .todo-more-menu{
-  background-color: var(--light-color);
+  background-color: var(--primary-color);
   display: flex;
   flex-direction: column;
-  color: var(--primary-color);
+  color: var(--light-color);
   border-radius: 10px;
   width: 150px;
   padding: 5px;
   position: absolute;
   top: 20px;
   right: 0;
-  display: none;
+  /* display: none; */
+  visibility: hidden;
+  opacity: 0;
+  transition: visibilty 0s, opacity 0.15s linear;
+}
+
+.todo-more-menu-enable{
+  visibility: visible;
+  opacity: 1;
 }
 
 .todo-menu-edit, .todo-menu-delete{
-  color:var(--primary-color);
+  color: var(--light-color);
   padding: 10px;
 }
 
 .todo-menu-edit{
   border-bottom: 1px solid var(--secondary-color);
 }
+/* Strikethrough */
+.todo-done-checked .todo-title,
+.todo-done-checked .todo-text{
+  text-decoration: line-through;
+}
+
+.todo-strikethrough{
+  text-decoration: line-through;
+}
+/* Done check box */
+.todo-done{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.todo-done-checked .todo-done-checkbox{
+  border: 1px solid var(--light-color);
+}
+
+.todo-done-checked .todo-done-check{
+  color: var(--light-color);
+  visibility: visible;
+}
+
+.todo-done-checked .todo-done-text{
+  color: var(--light-color);
+}
+
+.todo-done-link{
+  display: flex;
+  align-items: center;
+}
 
 .todo-done-text{
   margin: 0;
   display: inline;
+  margin-left: 10px;
+  color: var(--tertiary-color);
+}
+
+.todo-done-checkbox{
+  border: 1px solid var(--tertiary-color);
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding:  5px; */
+}
+
+.todo-done-check{
+  width: 20px;
+  visibility: hidden;
+  color: var(--tertiary-color);
 }
 
 /* THE FORM */
