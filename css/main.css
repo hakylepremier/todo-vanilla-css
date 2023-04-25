@@ -35,6 +35,8 @@ a{
   text-decoration: none;
 }
 
+
+
 .head{
   display: flex;
   justify-content: space-between;
@@ -72,8 +74,8 @@ a{
 
 .categories{
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  flex-direction: row;
+  justify-content: space-evenly;
   margin: 20px 0;
 }
 
@@ -94,8 +96,15 @@ a{
   background-color: var(--secondary-color);
   color: var(--tertiary-color);
   padding: 15px;
-  margin: 20px 0;
+  /* margin: 20px 0; */
   border-radius: 10px;
+}
+
+.todo-items{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  /* gap: 20px; */
 }
 
 .todo-head{
@@ -147,11 +156,28 @@ a{
 }
 
 /* THE FORM */
+.todo-form-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 10px;
+  display: none;
+}
+
 .todo-form{
   padding: 30px;
   background-color: var(--tertiary-color);
   color: var(--primary-color);
   border-radius: 20px;
+  /* max-width: 500px; */
+  /* margin: auto; */
+  flex: 0 1 500px;
 }
 
 .todo-form-action-btns{
@@ -195,3 +221,27 @@ a{
 }
 
 
+@media screen and (min-width: 920px) {
+  .container{
+    padding: 0 10px;
+  }
+
+  .main-info{
+    display: flex;
+    gap: 20px;
+  }
+
+
+
+  .todo-item{
+    /* width: 50%; */
+    margin: 0;
+  }
+
+  .categories{
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    gap: 20px;
+  }
+}
